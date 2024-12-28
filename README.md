@@ -9,15 +9,34 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background: url('https://www.nasa.gov/sites/default/files/thumbnails/image/blackhole.jpg') no-repeat center center fixed;
-            background-size: cover;
+            background: black;
             color: white;
             overflow-x: hidden;
+        }
+        #rotating-earth {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/8/8d/Earth_Western_Hemisphere.jpg') no-repeat center center;
+            background-size: cover;
+            border-radius: 50%;
+            animation: rotate 20s linear infinite;
+        }
+        @keyframes rotate {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
         }
         header {
             text-align: center;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 255, 0.5);
         }
         header img {
             max-width: 150px;
@@ -26,7 +45,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background: rgba(0, 0, 255, 0.5);
+            background: rgba(0, 0, 255, 0.7);
             padding: 10px 0;
         }
         nav a {
@@ -67,6 +86,8 @@
     </style>
 </head>
 <body>
+    <div id="rotating-earth"></div>
+
     <header>
         <img src="https://drive.google.com/uc?export=view&id=1KdLRXp6efbQxAmUZh7PmWKDWN1cm7AHn" alt="Chayapath Logo">
         <h1>Chayapath</h1>
@@ -75,7 +96,7 @@
     <nav>
         <a href="#introduction">Introduction</a>
         <a href="#board-members">Board Members</a>
-        <a href="#niharika">Niharika 1</a>
+        <a href="#nebula">Nebula 1</a>
         <a href="#subscription">Newsletter</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -96,10 +117,10 @@
         </ul>
     </section>
 
-    <section id="niharika">
-        <h2>Niharika 1</h2>
-        <img src="https://drive.google.com/uc?export=view&id=1lrR3Ksxor_5Fmvgw1FLMpS3OsBiJJc72" alt="Niharika 1">
-        <img src="https://drive.google.com/uc?export=view&id=15Db-7JtL3LNiDfUd-JAEAtqEWpPFzbrO" alt="Niharika 2">
+    <section id="nebula">
+        <h2>Nebula 1</h2>
+        <img src="https://drive.google.com/uc?export=view&id=1lrR3Ksxor_5Fmvgw1FLMpS3OsBiJJc72" alt="Nebula 1">
+        <img src="https://drive.google.com/uc?export=view&id=15Db-7JtL3LNiDfUd-JAEAtqEWpPFzbrO" alt="Nebula 2">
     </section>
 
     <section id="subscription">
