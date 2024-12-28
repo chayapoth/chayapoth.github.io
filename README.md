@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,6 +18,30 @@
             color: #fff;
             padding: 1rem 0;
             text-align: center;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            display: block;
+        }
+        nav ul li a:hover {
+            background: #575757;
         }
         section {
             padding: 1.5rem;
@@ -54,12 +78,22 @@
         <h1>Chayapoth</h1>
     </header>
 
-    <section>
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#members">Board Members</a></li>
+            <li><a href="#project">Project: Niharika</a></li>
+            <li><a href="#subscription">Subscribe</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="introduction">
         <h2>Introduction</h2>
         <p>Chayapoth is a youth-based organization whose mission is to spread the mystery of space around Bangladesh. Our slogan is - "Let's get lost in the infinite silence of space!" We conduct our work keeping this slogan in mind. So why the delay? Join us today to get lost in the infinite silence of space!</p>
     </section>
 
-    <section>
+    <section id="members">
         <h2>Board Members</h2>
         <ul class="members">
             <li>Ahanad Bin Hossain</li>
@@ -70,13 +104,13 @@
         </ul>
     </section>
 
-    <section>
+    <section id="project">
         <h2>Project: Niharika</h2>
         <p>Add an image of Niharika project here:</p>
         <img src="path-to-your-image.jpg" alt="Niharika Project" style="width:100%; max-width:800px;">
     </section>
 
-    <section>
+    <section id="subscription">
         <h2>Subscribe to Durbeen</h2>
         <form>
             <label for="email">Enter your email:</label>
@@ -85,7 +119,7 @@
         </form>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <h2>Contact Us</h2>
         <p>Email: <a href="mailto:galaxy.artk@gmail.com">galaxy.artk@gmail.com</a></p>
         <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61557178986162&mibextid=ZbWKwL" target="_blank">Visit our Facebook page</a></p>
