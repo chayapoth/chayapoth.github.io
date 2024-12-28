@@ -7,25 +7,31 @@
     <style>
         body {
             margin: 0;
-            padding: 0;
             font-family: Arial, sans-serif;
-            background: black;
             color: white;
+            background-color: black;
             overflow-x: hidden;
         }
-        #rotating-earth {
-            position: fixed;
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        header img {
+            width: 150px;
+            height: auto;
+        }
+        .earth {
+            position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%) rotate(0deg);
             width: 300px;
             height: 300px;
-            background: url('https://upload.wikimedia.org/wikipedia/commons/8/8d/Earth_Western_Hemisphere.jpg') no-repeat center center;
-            background-size: cover;
             border-radius: 50%;
-            animation: rotate 20s linear infinite;
+            background: url('earth_image_url') no-repeat center center/cover;
+            animation: rotateEarth 20s linear infinite;
         }
-        @keyframes rotate {
+        @keyframes rotateEarth {
             from {
                 transform: translate(-50%, -50%) rotate(0deg);
             }
@@ -33,80 +39,80 @@
                 transform: translate(-50%, -50%) rotate(360deg);
             }
         }
-        header {
-            text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 255, 0.5);
-        }
-        header img {
-            max-width: 150px;
-            margin-bottom: 10px;
-        }
         nav {
-            display: flex;
-            justify-content: center;
-            background: rgba(0, 0, 255, 0.7);
+            background-color: blue;
             padding: 10px 0;
         }
-        nav a {
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
+            font-size: 18px;
         }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 2rem;
+        .section {
+            padding: 20px;
             max-width: 800px;
-            margin: auto;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 8px;
-            margin-bottom: 2rem;
+            margin: 20px auto;
+            text-align: center;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
+        .board-members ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .board-members ul li {
             margin: 10px 0;
+        }
+        .nebula {
+            margin: 20px auto;
+            max-width: 90%;
+        }
+        .nebula img {
+            width: 100%;
+            height: auto;
         }
         footer {
             text-align: center;
-            background: rgba(0, 0, 255, 0.5);
-            padding: 1rem;
+            padding: 10px;
+            background-color: blue;
         }
         footer a {
             color: white;
             text-decoration: none;
         }
-        footer a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
-    <div id="rotating-earth"></div>
-
     <header>
         <img src="https://drive.google.com/uc?export=view&id=1KdLRXp6efbQxAmUZh7PmWKDWN1cm7AHn" alt="Chayapath Logo">
-        <h1>Chayapath</h1>
     </header>
 
+    <div class="earth"></div>
+
     <nav>
-        <a href="#introduction">Introduction</a>
-        <a href="#board-members">Board Members</a>
-        <a href="#nebula">Nebula 1</a>
-        <a href="#subscription">Newsletter</a>
-        <a href="#contact">Contact</a>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#board">Board Members</a></li>
+            <li><a href="#nebula">Niharika 1</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <section id="introduction">
-        <h2>Introduction</h2>
+    <div id="introduction" class="section">
+        <h1>Welcome to Chayapath</h1>
         <p>Chayapath is a youth-based organization that aims to spread the mystery of space around Bangladesh. Our slogan is - "Let's get lost in the infinite silence of space!" We conduct our work keeping this slogan in mind. So why the delay? Join us today to get lost in the infinite silence of space!</p>
-    </section>
+    </div>
 
-    <section id="board-members">
+    <div id="board" class="section board-members">
         <h2>Board Members</h2>
         <ul>
             <li>Ahnad bin Hossain</li>
@@ -115,28 +121,28 @@
             <li>Sanajidul Mohsinin Tamim</li>
             <li>Rafi Islam</li>
         </ul>
-    </section>
+    </div>
 
-    <section id="nebula">
-        <h2>Nebula 1</h2>
-        <img src="https://drive.google.com/uc?export=view&id=1lrR3Ksxor_5Fmvgw1FLMpS3OsBiJJc72" alt="Nebula 1">
-        <img src="https://drive.google.com/uc?export=view&id=15Db-7JtL3LNiDfUd-JAEAtqEWpPFzbrO" alt="Nebula 2">
-    </section>
+    <div id="nebula" class="section nebula">
+        <h2>Niharika 1</h2>
+        <img src="https://drive.google.com/uc?export=view&id=1lrR3Ksxor_5Fmvgw1FLMpS3OsBiJJc72" alt="Niharika 1 Image">
+        <img src="https://drive.google.com/uc?export=view&id=15Db-7JtL3LNiDfUd-JAEAtqEWpPFzbrO" alt="Second Niharika Image">
+    </div>
 
-    <section id="subscription">
-        <h2>Newsletter Subscription</h2>
+    <div id="newsletter" class="section">
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Join "Darwin" for the latest updates and insights!</p>
         <form>
-            <label for="email">Enter your email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" placeholder="Enter your email" required>
             <button type="submit">Subscribe</button>
         </form>
-    </section>
+    </div>
 
-    <section id="contact">
+    <div id="contact" class="section">
         <h2>Contact Us</h2>
         <p>Email: <a href="mailto:galaxy.artk@gmail.com">galaxy.artk@gmail.com</a></p>
-        <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61557178986162&mibextid=ZbWKwL" target="_blank">Visit our Facebook page</a></p>
-    </section>
+        <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61557178986162&mibextid=ZbWKwL" target="_blank">Visit our Facebook Page</a></p>
+    </div>
 
     <footer>
         <p>&copy; 2024 Chayapath. All rights reserved.</p>
