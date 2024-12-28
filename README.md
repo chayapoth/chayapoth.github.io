@@ -1,118 +1,37 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chayapath</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: black;
-            color: blue;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #001f3f;
-        }
-
-        header img {
-            width: 100px;
-            height: auto;
-            border-radius: 50%;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #0074D9;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            background-color: #001f3f;
-            border-radius: 5px;
-        }
-
-        #rotating-earth {
-            width: 200px;
-            height: 200px;
-            background: url('https://drive.google.com/uc?export=view&id=1KdLRXp6efbQxAmUZh7PmWKDWN1cm7AHn') no-repeat center center/cover;
-            border-radius: 50%;
-            margin: 20px auto;
-            animation: rotate 20s linear infinite;
-        }
-
-        @keyframes rotate {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .board-members ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .board-members li {
-            margin: 5px 0;
-        }
-
-        footer {
-            background-color: #001f3f;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-
-        .nebula-image {
-            max-width: 90%;
-            height: auto;
-            margin: 20px auto;
-            border: 2px solid white;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <img src="https://drive.google.com/uc?export=view&id=1KdLRXp6efbQxAmUZh7PmWKDWN1cm7AHn" alt="Chayapath Logo">
-        <h1>Chayapath</h1>
+        <img src="https://drive.google.com/uc?id=1KdLRXp6efbQxAmUZh7PmWKDWN1cm7AHn" alt="Chayapath Logo" class="logo">
     </header>
 
+    <!-- Navigation Bar -->
     <nav>
-        <a href="#introduction">Introduction</a>
-        <a href="#board-members">Board Members</a>
-        <a href="#nebula">Niharika 1</a>
-        <a href="#newsletter">Newsletter</a>
-        <a href="#contact">Contact</a>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#board-members">Board Members</a></li>
+            <li><a href="#nebula-image">Nebula 1</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <div id="rotating-earth"></div>
-
+    <!-- Introduction Section -->
     <section id="introduction">
         <h2>Introduction</h2>
-        <p>Chayapath is a youth-based organization that aims to spread the mystery of space around Bangladesh. Our slogan is - "Let's get lost in the infinite silence of space!" We conduct our work keeping this slogan in mind. So why the delay? Join us today to get lost in the infinite silence of space!</p>
+        <p>Chayapath is a youth-based organization that aims to spread the mystery of space around Bangladesh. Our slogan is - "Let's get lost in the infinite silence of space!". We conduct our work keeping this slogan in mind. So why the delay? Join us today to get lost in the infinite silence of space!</p>
     </section>
 
-    <section id="board-members" class="board-members">
+    <!-- Board Members Section -->
+    <section id="board-members">
         <h2>Board Members</h2>
         <ul>
             <li>Ahnad bin Hossain</li>
@@ -123,28 +42,31 @@
         </ul>
     </section>
 
-    <section id="niharika">
-        <h2>Niharika 1</h2>
-        <img src="https://drive.google.com/uc?export=view&id=1lrR3Ksxor_5Fmvgw1FLMpS3OsBiJJc72" alt="Nebula 1" class="nebula-image">
+    <!-- Nebula 1 Image Section -->
+    <section id="nebula-image">
+        <h2>Nebula 1</h2>
+        <img src="https://drive.google.com/uc?id=1lrR3Ksxor_5Fmvgw1FLMpS3OsBiJJc72" alt="Nebula 1 Image">
     </section>
 
+    <!-- Newsletter Subscription Section -->
     <section id="newsletter">
-        <h2>Newsletter</h2>
-        <p>Subscribe to our newsletter "Darwin" to stay updated!</p>
-        <form>
-            <input type="email" placeholder="Enter your email" required>
+        <h2>Newsletter Subscription</h2>
+        <form action="#" method="post">
+            <label for="email">Enter your email for our newsletter:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
             <button type="submit">Subscribe</button>
         </form>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:galaxy.artk@gmail.com" style="color: #0074D9;">galaxy.artk@gmail.com</a></p>
-        <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61557178986162&mibextid=ZbWKwL" target="_blank" style="color: #0074D9;">Visit our page</a></p>
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:galaxy.artk@gmail.com">galaxy.artk@gmail.com</a></p>
+        <p>Follow us on Facebook: <a href="https://www.facebook.com/profile.php?id=61557178986162&mibextid=ZbWKwL" target="_blank">Facebook Page</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Chayapath. All rights reserved.</p>
+        <p>&copy; 2024 Chayapath. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
