@@ -9,15 +9,15 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background: #000;
-            color: #fff;
+            background: url('https://www.nasa.gov/sites/default/files/thumbnails/image/blackhole.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
             overflow-x: hidden;
         }
         header {
-            position: relative;
-            background: linear-gradient(90deg, #000, #005f99);
             text-align: center;
-            padding: 1rem 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
         }
         header img {
             max-width: 150px;
@@ -26,11 +26,11 @@
         nav {
             display: flex;
             justify-content: center;
-            background: #005f99;
+            background: rgba(0, 0, 255, 0.5);
             padding: 10px 0;
         }
         nav a {
-            color: #fff;
+            color: white;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
@@ -38,30 +38,11 @@
         nav a:hover {
             text-decoration: underline;
         }
-        .solar-system {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: url('https://www.solarsystemscope.com/textures/download/2k_sun.jpg') no-repeat center center;
-            background-size: cover;
-            animation: rotate 60s linear infinite;
-        }
-        @keyframes rotate {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
         section {
             padding: 2rem;
             max-width: 800px;
             margin: auto;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.7);
             border-radius: 8px;
             margin-bottom: 2rem;
         }
@@ -73,11 +54,11 @@
         }
         footer {
             text-align: center;
-            background: #005f99;
+            background: rgba(0, 0, 255, 0.5);
             padding: 1rem;
         }
         footer a {
-            color: #fff;
+            color: white;
             text-decoration: none;
         }
         footer a:hover {
@@ -86,8 +67,6 @@
     </style>
 </head>
 <body>
-    <div class="solar-system"></div>
-
     <header>
         <img src="https://drive.google.com/uc?export=view&id=1KdLRXp6efbQxAmUZh7PmWKDWN1cm7AHn" alt="Chayapath Logo">
         <h1>Chayapath</h1>
@@ -96,7 +75,7 @@
     <nav>
         <a href="#introduction">Introduction</a>
         <a href="#board-members">Board Members</a>
-        <a href="#nebula">Nebula 1</a>
+        <a href="#niharika">Niharika 1</a>
         <a href="#subscription">Newsletter</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -117,10 +96,10 @@
         </ul>
     </section>
 
-    <section id="nebula">
-        <h2>Nebula 1</h2>
-        <img src="https://drive.google.com/uc?export=view&id=1lrR3Ksxor_5Fmvgw1FLMpS3OsBiJJc72" alt="Nebula 1">
-        <img src="https://drive.google.com/uc?export=view&id=15Db-7JtL3LNiDfUd-JAEAtqEWpPFzbrO" alt="Nebula 2">
+    <section id="niharika">
+        <h2>Niharika 1</h2>
+        <img src="https://drive.google.com/uc?export=view&id=1lrR3Ksxor_5Fmvgw1FLMpS3OsBiJJc72" alt="Niharika 1">
+        <img src="https://drive.google.com/uc?export=view&id=15Db-7JtL3LNiDfUd-JAEAtqEWpPFzbrO" alt="Niharika 2">
     </section>
 
     <section id="subscription">
