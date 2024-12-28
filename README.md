@@ -3,115 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chayapoth</title>
+    <title>Chayapath</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
         }
         header {
-            background: #282c34;
-            color: #fff;
-            padding: 1rem 0;
+            position: relative;
+            background: linear-gradient(90deg, #000, #005f99);
             text-align: center;
+            padding: 1rem 0;
+        }
+        header img {
+            max-width: 150px;
+            margin-bottom: 10px;
         }
         nav {
-            background: #333;
-            color: #fff;
-            overflow: hidden;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
             display: flex;
             justify-content: center;
+            background: #005f99;
+            padding: 10px 0;
         }
-        nav ul li {
-            margin: 0;
-        }
-        nav ul li a {
+        nav a {
             color: #fff;
             text-decoration: none;
-            padding: 0.75rem 1.5rem;
-            display: block;
+            margin: 0 15px;
+            font-weight: bold;
         }
-        nav ul li a:hover {
-            background: #575757;
-        }
-        section {
-            padding: 1.5rem;
-            max-width: 800px;
-            margin: auto;
-        }
-        .members {
-            list-style: none;
-            padding: 0;
-        }
-        .members li {
-            margin: 0.5rem 0;
-        }
-        .contact a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .contact a:hover {
+        nav a:hover {
             text-decoration: underline;
         }
-        footer {
-            background: #282c34;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
+        .solar-system {
             position: fixed;
-            bottom: 0;
+            top: 0;
+            left: 0;
             width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('https://www.solarsystemscope.com/textures/download/2k_sun.jpg') no-repeat center center;
+            background-size: cover;
+            animation: rotate 60s linear infinite;
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            background: #005f99;
+            padding: 1rem;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    <div class="solar-system"></div>
+
     <header>
-        <h1>Chayapoth</h1>
+        <img src="https://drive.google.com/uc?export=view&id=1KdLRXp6efbQxAmUZh7PmWKDWN1cm7AHn" alt="Chayapath Logo">
+        <h1>Chayapath</h1>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#members">Board Members</a></li>
-            <li><a href="#project">Project: Niharika</a></li>
-            <li><a href="#subscription">Subscribe</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-        </ul>
+        <a href="#introduction">Introduction</a>
+        <a href="#board-members">Board Members</a>
+        <a href="#nebula">Nebula 1</a>
+        <a href="#subscription">Newsletter</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <section id="introduction">
         <h2>Introduction</h2>
-        <p>Chayapoth is a youth-based organization whose mission is to spread the mystery of space around Bangladesh. Our slogan is - "Let's get lost in the infinite silence of space!" We conduct our work keeping this slogan in mind. So why the delay? Join us today to get lost in the infinite silence of space!</p>
+        <p>Chayapath is a youth-based organization that aims to spread the mystery of space around Bangladesh. Our slogan is - "Let's get lost in the infinite silence of space!" We conduct our work keeping this slogan in mind. So why the delay? Join us today to get lost in the infinite silence of space!</p>
     </section>
 
-    <section id="members">
+    <section id="board-members">
         <h2>Board Members</h2>
-        <ul class="members">
-            <li>Ahanad Bin Hossain</li>
-            <li>Yeshfi Islam</li>
-            <li>Mominul Haque Maruf</li>
-            <li>Sanajidul Muhsinin Tamim</li>
+        <ul>
+            <li>Ahnad bin Hossain</li>
+            <li>Yashfi Islam</li>
+            <li>Muminul Haq Maruf</li>
+            <li>Sanajidul Mohsinin Tamim</li>
             <li>Rafi Islam</li>
         </ul>
     </section>
 
-    <section id="project">
-        <h2>Project: Niharika</h2>
-        <p>Add an image of Niharika project here:</p>
-        <img src="path-to-your-image.jpg" alt="Niharika Project" style="width:100%; max-width:800px;">
+    <section id="nebula">
+        <h2>Nebula 1</h2>
+        <img src="https://drive.google.com/uc?export=view&id=1lrR3Ksxor_5Fmvgw1FLMpS3OsBiJJc72" alt="Nebula 1">
+        <img src="https://drive.google.com/uc?export=view&id=15Db-7JtL3LNiDfUd-JAEAtqEWpPFzbrO" alt="Nebula 2">
     </section>
 
     <section id="subscription">
-        <h2>Subscribe to Durbeen</h2>
+        <h2>Newsletter Subscription</h2>
         <form>
             <label for="email">Enter your email:</label>
             <input type="email" id="email" name="email" required>
@@ -119,14 +132,14 @@
         </form>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact">
         <h2>Contact Us</h2>
         <p>Email: <a href="mailto:galaxy.artk@gmail.com">galaxy.artk@gmail.com</a></p>
         <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61557178986162&mibextid=ZbWKwL" target="_blank">Visit our Facebook page</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Chayapoth. All rights reserved.</p>
+        <p>&copy; 2024 Chayapath. All rights reserved.</p>
     </footer>
 </body>
 </html>
