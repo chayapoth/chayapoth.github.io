@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chayapath</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+
+        nav {
+            background-color: #0066cc;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            color: #0066cc;
+            margin-bottom: 20px;
+        }
+
+        .board-members {
+            list-style-type: none;
+            padding: 20px;
+        }
+
+        .board-members li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f0f8ff;
+            border-radius: 5px;
+        }
+
+        .niharika-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .niharika-images img {
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .newsletter {
+            text-align: center;
+            background-color: #f0f8ff;
+            padding: 40px 20px;
+        }
+
+        .newsletter-button {
+            background-color: #0066cc;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .contact-info {
+            text-align: center;
+            padding: 30px;
+            background-color: #f0f8ff;
+        }
+
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://drive.google.com/uc?export=view&id=1KdLRXp6efbQxAmUZh7PmWKDWN1cm7AHn" alt="Chayapath Logo" class="logo">
+    </header>
+
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#board-members">Board Members</a>
+        <a href="#niharika">Niharika 1</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="introduction">
+        <h1>Welcome to Chayapath</h1>
+        <p>Chayapath is a youth-based organization that aims to spread the mystery of space around Bangladesh. Our slogan is - "Let's get lost in the infinite silence of space!" We conduct our work keeping this slogan in mind. So why the delay? Join us today to get lost in the infinite silence of space!</p>
+    </section>
+
+    <section id="board-members">
+        <h2>Board Members</h2>
+        <ul class="board-members">
+            <li>Ahnad bin Hossain</li>
+            <li>Yashfi Islam</li>
+            <li>Muminul Haq Maruf</li>
+            <li>Sanajidul Mohsinin Tamim</li>
+            <li>Rafi Islam</li>
+        </ul>
+    </section>
+
+    <section id="niharika">
+        <h2>Niharika 1 Project</h2>
+        <div class="niharika-images">
+            <img src="https://drive.google.com/uc?export=view&id=1lrR3Ksxor_5Fmvgw1FLMpS3OsBiJJc72" alt="Niharika 1 Image">
+            <img src="https://drive.google.com/uc?export=view&id=15Db-7JtL3LNiDfUd-JAEAtqEWpPFzbrO" alt="Second Image">
+        </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+        <h2>Subscribe to Darwin Newsletter</h2>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeW12i7rGFg35zWshIv98A7EWsH0nVJD7jhNZZ1X_U0kEo68w/viewform?usp=header" target="_blank">
+            <button class="newsletter-button">Subscribe Now</button>
+        </a>
+    </section>
+
+    <section class="contact-info" id="contact">
+        <h2>Contact Us</h2>
+        <p>
+            <a href="mailto:galaxy.artk@gmail.com">galaxy.artk@gmail.com</a><br><br>
+            <a href="https://www.facebook.com/profile.php?id=61557178986162&mibextid=ZbWKwL" target="_blank">Facebook Page</a>
+        </p>
+    </section>
+</body>
+</html>
